@@ -1,0 +1,1447 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Resumer Linux</title>
+	<meta name='Generator' content='Zim 0.68'>
+	<style type='text/css'>
+		a          { text-decoration: none      }
+		a:hover    { text-decoration: underline }
+		a:active   { text-decoration: underline }
+		strike     { color: grey                }
+		u          { text-decoration: none;
+					 background-color: yellow   }
+		tt         { color: #2e3436;            }
+		pre        { color: #2e3436;
+					 margin-left: 20px          }
+		h1         { text-decoration: underline;
+					 color: #4e9a06; margin-bottom: 0 }
+		h2         { color: #4e9a06; margin-bottom: 0 }
+		h3         { color: #4e9a06; margin-bottom: 0 }
+		h4         { color: #4e9a06; margin-bottom: 0 }
+		h5         { color: #4e9a06; margin-bottom: 0 }
+		p          { margin-top: 0              }
+		span.zim-tag {
+			color: #ce5c00;
+		}
+		div.zim-object {
+			border-style:solid;
+			border-width:1px;
+		}
+		.checked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8sMEGsKGkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEBUlEQVRIx62V22tdRRTGf7Nn73P2ybntnNOe3NqkPTGgLTVUUZF6QatSLOKTPgqCIqLgQ0H/A1sQQbBYCBb1QfAxiC8tSO1FqHkwJVKtjdTGNraUmObsc9nXmfGh7cGYpM1D5nHWzPetteZb3wg2eB2YqYm4zSadsMtoboiNBH/3TE0awx6j+MRoxoTg/IYRvP19TQrJS0bzhdHGSyKFkLTtjSKwMjyiEz43ynhtP6bdjBCWyFobAf7eT7VhNF/q1FRbjYjmUohlCVPwnB+6FUxMTJipqSmUUhhjEGKd3bMT4ks/Y6oLBK2Yth8hHYtCJXOix7Nf7xLMzc0xOzvLzp078TyPNE3viW3QJPXzhNWbxFFKHCmMhoLn/FHodd48vGfhapdAacXQlkFK5dL6wIUm6fuTZPuvqDQhaMUYYyiVyuQr6rXDexYuAdi3tSv1ZJNs/R/CaszzT+1na88uXFnCEnJVgivBNN8uTJKmHQI/ptOOcXNZzMz9mOqFs90OHpipWcYwlo5P4ebnuOkrvr5wgrH+h3im7y36MzuwRXYZeKha/OhP0EkadFoxQSdGSotedR/+XwMc2XvKdNUFOFqZx6LKZWIiwjgkikNmLp/hm8sH+K1zjFTHXfBYdTi+eJArzXM0GxFxoBDCopLvo/fqEwi1XPkWkGqjFo2TgB1jOYZUKZTS/D1/ncmLh7jon0IbRWoiTi59ymzzJEEQE3cStNZsGxqlfPE57MBbOR8fP3hDGalOO9fq2DlBvmZw8xa2IxACGn6TydlD/O6f5OzSV/zif0cYhLQaEXGkKBbz7Ov/AOlXV1cxgBJRI3fuSTrpTawt18kWIZN1CFuaONI0w0WOXfsI43YIggh/KUSlhqxrMz74AkOZcWBm9QkH+Gw8NDLuITi+m0yzhluSyJzBLcpblUhFxywSRAEtPwQjsKVN30CNh0uvYuOubSHLtN3J0TO1j0pmBNuFbFWRK0gyPRZpktL2I5JQkclKakNlnh54g6ocvevUr/Ai2a7wineEkcJupA3S1Wg0nVZM2E6wbEF5U5G9Q++wI7sfR7h3N8HVNstykBfzH+KJEZwiWD0aIwxCgJ0R1Mu7GXOeJSuK93bZtQIle4D9pUNU5DC5jEsu55AvZakM5NicGyEj8uuz8bUCQgj67QfY671P3vEoeC69gy695U1U7NG7XV0pUwBjDJa1/JJlWWxzHuflzQe5FJ/GsgUVuZ2t8lEkTvfc0aNHb72flBhjVicQQqCUuvM3/M+WDVguWBrMVdDXEGZlBVEUrVCU9d9s5+fnaTQa2PZyPxEIhJaI1EEoZwX4ncynp6fXrmB4eJjR0VFarRbNZnP9P9rt9gohqNVq1Ov1ZbF/AZGev3hLJ2/zAAAAAElFTkSuQmCC)}
+		.xchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8bDYnDxEwAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEK0lEQVRIx9WVS2hTWRjHf/eR3CY1nbxMH2YiZRQS6qO13YlMVxY3SnVcuNIBFezGpSADLoQqLu1sHJCqdCFSXFpw4YOCSH3BtFqttTNamabX3DS5bfO6uffMoglja3RGcDMHzuac7/z/53++//cd+L8P6VuCPQYZ8ADNgBd4J31DcDcQs+GnHByRocEDv0kfBSjAOlYCs11Q+gpwDegS8LMJ+3QIK0ATzEhV8Odnz5bzw8P4dJ25aJQ/WlvJ1df/K7hSLtOcTNI+Pk69rpMTgqIQhCDvh1/VSpw79+gRrRMTmLZNezLJJsPg+a5dmOEwQlFqg1sWG16/Jv7sGWXDwBACFQjC9HcwIMONKkGp4PGAJGEDS0IQmZlhnWnye3c3eiyGo6qr3WHbrJ+dJf7gAXI6zSIr72T7/fgzmT4FHnTBsgrQBfYvTU0km5vxz86iADnAm0rRPTWFt7cXZccOJJcLAGHb2K9ekT93jmwmwwdAAFpjI6Ntbfxw5879ag7l6o1sr5eHHR3IsRgeQK/M4sQE+YEB7JcvEY6zAj45SWFgAPPxYwzHoQxIkQjTPT0kIxE+Noj8sexFn4/xnh58iQTeSpHkHAdrbIzi0BCOrmNPTpK/eJHM3bt8sCyKQCiR4NWePWSiUZw1+ZLXJm4pFKLhzBlCsRh2RUXacVgeGaF47RrL58+zcP8+RrmMkCQinZ1EL1zAjERqmkH+tLYl1G3bCJw4QUjT0IA0MJfLMX/5MqmHD0nZNiUgtGULG/r7ccXjINWuWbnmqsuFu7sb/4EDNLlcBIEioNs2KUAFGmMxmk6dQm1tRZI+3xBqEkiShBQOox05Ql1nJ26gvuIUAWiKQnj/ftStW5Fk+YuF+NldsbBA4cYN9KdPmaso8Fc62ZJtk7l1C2t0FGdxESHE1xE4hkHh6lX0oSHSpRIewC/LrPf7CSgKNpCamkI/fZr8pUuIZBIcpyaBunahPp1mub+fDyMjGKUSChCsq6Nh717q9u2jbnSU0uAgRrFIwTThyhUCqRS+hgZKLS1fJvDm87SNjZGcnsYUAjcQ8vsJ9/Xh7u1FDgRQN20iks3iDA+zZFmYhQLqzZtsj8WY3L0baY2Sf55ICCKpFHUzM2SEQAJCHg+hY8fQDh5EDgRWDoRC1J88SePRo2geD0XAcBy8b98Sv3ePYDZbbf2rFQjLIphMsmDbaEBQVQkePox26BCSz7e6i4bDrDt+nGYhmBscpFAskheC4Js3bPR4qHphFYEnlcI7P4/jdqNpGu8TCe4oCsXr1z//F2ga3+/cSfTJE0qmSVYIsKzaOZDcbjKyzFIiwfvt21kMBLA07YsetzWNd+3tLLW0sH5igvT8PH9Go/z44kX+E4LGjg7GDYOcy4XlOEgLC//5P/5LCFzxOPLmzWyIx+m6fduu7v0NVGqyTSycKksAAAAASUVORK5CYII=)}
+		.unchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8qAt8h3m8AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAA60lEQVRIx+2VsQqDMBRF70sCLg5OLoKgjk7+lJ/hh+STXBwcnRz8ArMEkrxOFktbaC3tULzTg5e8k5vADXDq70VbobXmvu/hvQczg4heHrJfXxQFuq67blZbMc8zpmlCXddIkgTOuZcBUko45zCOI6y1Nz2xFSEEZFmGOI7fGg4A3nsQEZqmuXOu9jallACAtm3fvmutNaIoAjM/dkBECCF89KCbk4eAb+kEnIAT8EsAM0OIz3hSyrssUvss8t5fg+uIrLXPs0gIgWVZYIyBUurQyYdheO4gz3NUVQVjDNZ1PfSjpWmKsixvehfB9GBZ3NndrgAAAABJRU5ErkJggg==)}
+		.migrated-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB+AKHREFA8vJSnkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAC1klEQVRIx+2VT0hUURTGf/e958w4Tc3TYowMw1GyEgwr1MqsFmbZIrIWQZsWJUjbdoHQpl3Qps0swnCRECQFYkR/TC1iKkqmfzAKTo2Vf8hoRsfR995tkRMT87RRWkUHHhy495zvnvvu933wP/75EKkkEAjIYDCIaZpIKRFCZN0kfX9xcTGtra2/irVUEolECIfDlJeXo+s6hmFkDaCqKoZhEAqFSCaTv60pqcSyLAoLC/F4PEtqDmCaJkIIKisrMybX0sdUVRWA5ubmPzdNjjI1cpXkZC/O1fV03PXgdDqRUtpPIITAsqxsDz0Z/3CZQv8uqo4N4C8/Tp2/DdM0MiZQlvk41OTkI/LW1SGtCVb5drD3eCc71wcA+VcAHA5vDd8+3UGakxiJV7i9pdQevU5T1R35pJ3MV5QW1pf+0kWBheJ2SWua8EQXZXsu4fVVYEz1sEKvof5EuxjoPvzpcRvrdp9C2gGMx6cpOHBmbImMesds7BZubwMVDTfXDnQ3vQfK7AC8wLfExMX5whyQc3q2OEnjGm5vE76SQxsfBLr77a7CNf+n0r/l6sSMtsBSnurckiIILCobAtVZhpF4gZF4jubaymj4Ch/fd380LE7bAnjc0NPxk2yqpmEuwGxF0ag+0k5uTpzZeBeaazvj0We8fXojainsb2xh2BZgbe0gSIllzSIUh63wfQ6dZ/O2fbjcKlOj58jJ3cVENESw5yErc9nf2MLQ4jwQAkV1Lqiq37/cZ9WaahJjF9AcmxiPDhLs7ePe23oOnmUwg2hSShQle96tKDjA2HAniusgo9FxnvY9Jxw7RWzGYy92QghM00x5g53qp9sHmtB58/o2umOI2NwGolMnMYUHIb7aAyiKwsjICLqu2/qBEIKUUAohMaSHSLyBSMoPTINQ6CX5+fn2AEVFRZSUlBCPx4nFYhl3L4RESjF/GEgX3pSj+Xw+/H7/b3U/AEOZFnp7O5+5AAAAAElFTkSuQmCC)}
+		ul {list-style-image: none}
+		/* ul rule needed to reset style for sub-bullets */
+	</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class='header'>
+	[ <span class='insen'>Prev</span> ]
+
+	[ <span class='insen'>Index</span> ]
+
+	[ <span class='insen'>Next</span> ]
+</div>
+
+<hr />
+
+<!-- Wiki content -->
+
+<div class='pages'>
+	
+
+	<div class='heading'>
+	<h1>Resume by Ashref FAIDI 2019-2020 <a name='Home'></a></h1>
+	</div>
+
+	<div class='content'>
+	
+<br>
+
+
+<hr>
+
+<br>
+
+<h2>Fichier  /etc/passwd</h2>
+
+<br>
+
+<p>
+exp   : <br>
+mask:x:1009:1009:Maxime Vantorre:/home/mask:/bin/bash
+</p>
+
+<p>
+Chaque entrée du fichier est composés de 7 champs (ou colonnes):
+</p>
+
+<p>
+<ol type="1" start="1">
+<li>nom de connexion (login)</li>
+<li>mot de passe optionnel (ou x pour utiliser les mots de passes masquées (shadow))</li>
+<li>identifiant d'utilisateur (UID)</li>
+<li>identifiant de groupe (GID)</li>
+<li>informations libres</li>
+<li>répertoire utilisateur</li>
+<li>interpréteur de commande (shell) par défaut</li>
+</ol>
+</p>
+
+<hr>
+
+<br>
+
+<h3>Remarques</h3>
+
+<br>
+
+<p>
+[Ctrl]+C  : interruption du programme en cours d'execution. <br>
+[Ctrl]+Z  : terminaison du programme.<br>
+[Ctrl]+D  : interruption d'une saisie sur un prompt.
+</p>
+
+<hr>
+
+<br>
+
+<h3>pwd</h3>
+
+<p>
+<b>pwd</b>   : show current directory  ( repertoire de travaille ) ! 
+</p>
+
+<p>
+.	 :	 repertoire courant <br>
+.. 	 :	repertoire parent 
+</p>
+
+
+<hr>
+
+<br>
+
+<h2>echo</h2>
+
+<br>
+
+<p>
+# | Expression  	 | Result      	| Comments<br>
+---+-------------+-------------+--------------------------------------------------------------------<br>
+ 1 | "$a"        		| apple       		| variables are expanded inside ""<br>
+ 2 | '$a'        		| $a          		| variables are not expanded inside ''<br>
+ 3 | "'$a'"      		| 'apple'     		| '' has no special meaning inside ""<br>
+ 4 | '"$a"'      		| "$a"        		| "" is treated literally inside ''<br>
+ 5 | '\<tt>        			| **invalid** 	| can not escape a ' within </tt>; use "'" or $'\'' (ANSI-C quoting)<br>
+ 6 | "red$arocks"	| red         		| $arocks does not expand $a; use ${a}rocks to preserve $a<br>
+ 7 | "redapple$" 	| redapple$  	| $ followed by no variable name evaluates to $<br>
+ 8 | '\"'        			| \"          		| \ has no special meaning inside ''<br>
+ 9 | "\'"        		| \'          		| \' is interpreted inside "" but has no significance for '<br>
+10 | "\""        		| "           		 |\" is interpreted inside ""<br>
+11 | "*"         		| *           		| glob does not work inside "" or ''<br>
+12 | "\t\n"     		 | \t\n        		| \t and \n have no special meaning inside "" or ''; use ANSI-C quoting<br>
+13 | "`echo hi`" 	| hi          		| `` and $() are evaluated inside ""<br>
+14 | '`echo hi`' 		| `echo hi`   	| `` and $() are not evaluated inside ''<br>
+15 | '${arr[0]}' 	| ${arr[0]}    	| array access not possible inside ''<br>
+16 | "${arr[0]}" 	| apple       		| array access works inside ""<br>
+17 | $'$a\''     		| $a'         		| single quotes can be escaped inside ANSI-C quoting<br>
+18 | "$'\t'"     		| $'\t'       		| ANSI quoting is not interpreted inside ""<br>
+19 | '!cmd'      		| !cmd        		| history expansion character '!' is ignored inside ''<br>
+20 | "!cmd"      		| cmd args   	 | expands to the most recent command matching "cmd"<br>
+---+-------------+-------------+--------------------------------------------------------------------
+</p>
+
+
+<hr>
+
+<br>
+
+<h4>Options courantes  :</h4>
+
+<p>
+<div style='padding-left: 30pt'>
+| -R | pour des arguments de type repertoire, la commande effectue in traitement récursif <br>
+| -a | Affiche tous les fichiers y compris les fichiers cachés (dont le nom commence par un point)<br>
+| -i | affichier les fichiers avec le numero d'inode correspondant <br>
+| -d | Affichier le nom des repertoires sans leur contenu<br>
+| -l | Affichie pour chaque fichier ou repertoir  ,des informations détaillées
+</div>
+</p>
+
+
+<hr>
+
+<br>
+
+<h1>Droit d'access</h1>
+
+<br>
+<br>
+
+<p>
+droit d'utilisation des fichiers  :  UGO   user group other 			<br>
+<div style='padding-left: 90pt'>
+ r read		 <br>
+ w write <br>
+ x execute   
+</div>
+exp   drwxr-xr-x  -&gt;  user = rwx   group  = r-x   other = r-x
+</p>
+
+<p>
+   			Fichier    							||  			  Repertoir <br>
+------------------------------------------------||---------------------------------------------------------------<br>
+r   :   droit d'affichier ( cat  / gedit)				|| lister le contenu du repertoir ( en utilisant la commande ls ) <br>
+w :  droit de modifier le fichier         	      			|| supprimer ou cree un nouveau fichier<br>
+x  :  executer le contenu de fichier (code ou script ) || aller dans le repertoir  (utiliser la commande cd )  
+</p>
+
+
+<hr>
+
+<br>
+
+<h4>chmod</h4>
+
+<br>
+
+<p>
+-&gt; changer le droit d'access    : 
+</p>
+
+<p>
+ chmod   nnn   f1   (file or directory)    ⇔   chmod  u = rw , g= w , o= x   f1    ( si nnn = 621 )  <br>
+<div style='padding-left: 60pt'>
+pour ajouter un droit  :  chmod u+x , g+w  f1  
+</div>
+<div style='padding-left: 30pt'>
+pour supprimer un droit   :  chmod u-x , o-rx  f1      
+</div>
+<div style='padding-left: 210pt'>
+chmod a-w f1     : a=all
+</div>
+</p>
+
+<br>
+
+<p>
+-&gt; droit par defaut  , à la creation de : <br>
+<ul>
+<li>fichier  : 666</li>
+<li>rep  	 : 777 </li>
+</ul>
+</p>
+
+<h5>unmask</h5>
+
+<p>
+-&gt; es droit enlevé par defaut   ! 
+</p>
+
+<p>
+umask : afficher les droit enleve 
+</p>
+
+<p>
+umask nnn  change les droit enleve   : droit par default  = 666 - nnn ; 
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+exp   :  umask   -&gt; droit fichier par defaut 022
+</div>
+</p>
+
+<br>
+
+<h4>chown</h4>
+
+<p>
+Changer de propriétaire <br>
+chown &lt;owner&gt; &lt;file/rep&gt;     : &lt;owner&gt; is the login
+</p>
+
+<h4>chgrp</h4>
+
+<p>
+changer de groupe <br>
+Changer &lt;group&gt;&lt;file/rep&gt;
+</p>
+
+<h4>chmod</h4>
+
+<p>
+changer permission <br>
+chmod &lt;perm&gt; &lt;file/rep&gt;  
+</p>
+
+
+<hr>
+
+<br>
+
+<h1>Gestion et manipulation des fichier</h1>
+
+<br>
+
+<h4>ls</h4>
+
+<br>
+
+<p>
+ls         : liste le contenuu de repertoir courant  <br>
+ls /temp    : liste le contenu  de repertoir passer en commande  <br>
+ls -l /temp   : beaucoup plus d'informations sure le contenu de ce repertoir   
+</p>
+
+<p>
+ls -ln    : u can find the user id UID instead of user login 
+</p>
+
+<h4>mkdir</h4>
+
+<br>
+
+<p>
+mkdir   : make directory   !    exp :   mkdir rep1 rep2 rep3  <br>
+<div style='padding-left: 240pt'>
+exp :   mkdir ../r2 
+</div>
+</p>
+
+<p>
+mkdir [-p] directory <br>
+-p : permet de creer tous les repertoirs intermediaires qui n'existeraient pas . 
+</p>
+
+<h4>rmdir</h4>
+
+<br>
+
+<p>
+rmdir [-p] [-s]  repertoir   : remouve directory   
+</p>
+
+<p>
+-p : permet de detruire tous les sous repertoires vides ( pour supprimer des repertoires contenants des fichier : rm -r repertoir )  . <br>
+-s : mode silencieux (aucun affichage).
+</p>
+
+<h4>touch</h4>
+
+<p>
+touch   fichier1  fichier2 fichier3 ... <br>
+permet de créer un ou plusieurs fichiers vides . 
+</p>
+
+<p>
+gedit fichier1     : editeur de text graphique <br>
+cat&gt;fichier1       : editeur standard  
+</p>
+
+<h4>cp</h4>
+
+<br>
+
+<p>
+cp   [-i] [-p] fichier1 fichier2 <br>
+cp   [-i] [-p]  [-r]  fichier1 [fichier2 ...] repertoir  ( copie  un ou plusieurs fichier  dans un repertoir , on peut aussi utiliser *.extention )  
+</p>
+
+<p>
+-i   : mode interactif ; demande de confirmation avant écrasement <br>
+-p  : conserve les dates du fichier source <br>
+-r  : copie recursive de répertoires 
+</p>
+
+<h4>mv</h4>
+
+<br>
+
+<p>
+mv [-f] [-i] fichier1 fichier2 <br>
+mv [-f] [-i] fichier1 [fichier2 ...] Repertoire<br>
+mv [-f] [-i] fichier1 [fichier2 ...] destination/fichier2 
+</p>
+
+<p>
+-i   : mode interactif ; demande de confirmation avant écrasement <br>
+-f : force la commande
+</p>
+
+<p>
+exp   | renommer un fichier <br>
+<div style='padding-left: 30pt'>
+| mv R1/* R2  #deplacer le contenu de R1 sous R2 
+</div>
+</p>
+
+<h4>rm</h4>
+
+<br>
+
+<p>
+mv [-f] [-i] [-r]  fichier1 [fichier2 ...]  
+</p>
+
+<p>
+-i   : mode interactif ; demande de confirmation avant écrasement <br>
+-f  : force la commande<br>
+-r  : récursif (detruit tous les sous repertoires ) 
+</p>
+
+<h4>cat</h4>
+
+<br>
+
+<p>
+cat [-option] [fichier]    		 : 	affichier le fichier sans donner la main à le modifier  .  
+</p>
+
+<p>
+ cat -n  fichier1 ⇔  nl fichier1   :      afficher les lignes numérotées    <br>
+cat&gt;fichier1                                       :      cancatiner un text a le fichier1 
+</p>
+
+<p>
+tac    : inverse l'ordre d'affichage des lignes   <br>
+rev : inverser les lignes    
+</p>
+
+<h4>pg</h4>
+
+<p>
+pg fichier1  :  affichier le fichier page par page  !   
+</p>
+
+<h4>more</h4>
+
+<p>
+1) more = to view a text file one page at a time, press spacebar to go to the next page
+</p>
+
+<p>
+more filename : show the document one page at a time
+</p>
+
+<p>
+more -num filename : show the document page few lines as specified bu (-num)
+</p>
+
+<p>
+example : more -10 filename will show 10 lines for every page
+</p>
+
+<h4>less</h4>
+
+<p>
+2) less = is much the same as more command except:
+</p>
+
+<p>
+a) You can navigate the page up/down using the less command and not possible in more command.
+</p>
+
+<p>
+b) You can search a string in less command. (use /keywordto search)
+</p>
+
+<p>
+c) “more” was fairly limited, and additional development on “more” had stopped
+</p>
+
+<p>
+d) it uses same functions as vi editor
+</p>
+
+<p>
+the usage : less filename
+</p>
+
+<h4>head</h4>
+
+<p>
+ displays the first ten lines of a file, unless otherwise stated.
+</p>
+
+<p>
+head myfile.txt – Would display the first ten lines of myfile.txt.<br>
+head -15 myfile.txt – Would display the first fifteen lines of myfile.txt.
+</p>
+
+<h4>tail</h4>
+
+<p>
+tail = display the last part of the file<br>
+tail [filename]<br>
+tail -n filename : display the last n lines of the file
+</p>
+
+<h4>cat</h4>
+
+<p>
+5) cat = can be used to join multiple files together and print the result on screen (it will not show page by page)
+</p>
+
+<p>
+cat 01.txt 							:to displat the contents of file 01.txt<br>
+cat 01.txt 02.txt  					: to display the contents of both files<br>
+cat file1.txt file2.txt &gt; file3.txt   	:  Reads file1.txt and file2.txt and  combines those files to make<br>
+cat note5 &gt;&gt; notes 				: attach note5 to notes<br>
+cat &gt;&gt; file1 						:add additional data in file1
+</p>
+
+<h4>editeur graphique</h4>
+
+<p>
+gedit  <br>
+kate 
+</p>
+
+<h2>find</h2>
+
+<p>
+find [paths] [expression] [actions]
+</p>
+
+<h5>Expression (Ctriteres de recherche)</h5>
+
+<p>
+<div style='padding-left: 60pt'>
+-name 	nomFichier<br>
+-type		typeDeFichier   		:([bcdfl] d=repertoir,c = caractere , f = fichierNormal, etc) 
+</div>
+<div style='padding-left: 360pt'>
+exp : find -	name a -type d,f
+</div>
+<div style='padding-left: 60pt'>
+-perm		nnn				: possedant les permissions nnn<br>
+-user 		login				: le prorietaire type <br>
+-size 		[+-]N 				: le taille et + ou - N en nombre de blocks (512oct )  ( can use  c or k  for 									octets and kiloOctets ) <br>
+-group 	group 					: group de fichier<br>
+-links 		number			: number of hard links   ( it's just like Shortcuts in windows ! i think hhh )  <br>
+-atime		[+-]N				: fichier qu'ont a ete ouverts il y a ± N jours <br>
+-ctime 	[+-]N					: created  ....  the same as above<br>
+-mtime 	[+-]N				: modified ... same as above <br>
+-inum 		N					: fichier avec nombre inode = N  
+</div>
+</p>
+
+<br>
+
+<p>
+exectuer plusieur exec  en serie  :    find ..............  -exec ls -l{} \ ; -exec rm{} \ ;  
+</p>
+
+<p>
+find -name with multipul pattern  :    find \dir  -name name1 -o -name2 
+</p>
+
+
+<hr>
+
+<br>
+
+<h1>Le Shell bash</h1>
+
+<br>
+
+<p>
+changer le shell  ; chsh <br>
+retourner la valeur d'une command comme une  string  :    `cmd`    exp :   PATH=$PATH:`pwd` <br>
+  X = `cmd`    ⇔ X = $(cmd)   
+</p>
+
+<h4>Stucture d'une Ligne de Commande</h4>
+
+<br>
+
+<p>
+cmd1 ;cmd2      : execution sequentielle d'une façan independant <br>
+cmd1&amp;                : exécution parallele <br>
+cmd1 &amp;&amp; cmd2 : execution de cmd2 et condition par le succes d'exection de cmd1 <br>
+cmd1 ||  cmd2 : execution de cmd2 et condition par l'echec d'exection de cmd1  
+</p>
+
+<p>
+ouvrir un shell en parallele   :   sh 
+</p>
+
+<h4>variable</h4>
+
+<p>
+declarer un variable  :  X=4  <br>
+make as global    :  export X   ( from the Main terminal only  , can't export from second terminal  ! !!   )  <br>
+show varibal   : echo $X 
+</p>
+
+<p>
+possibilité d'affichage  : <br>
+<div style='padding-left: 60pt'>
+ echo " la valeur de X est $X"<br>
+echo la valeur de   x est $X   ( will delet all extra spaces  ) <br>
+echo 'la valeur est $X'    ( do not interpret $ sign )  
+</div>
+   --&gt;  le caracter '\' annule l'interpretation de caracter suivant <br>
+   --&gt;  le caracter (`  ` )  execute la commande  
+</p>
+
+<h4>read variables</h4>
+
+<br>
+
+<p>
+echo  -n  "saisir votre nom ici : " <br>
+read name <br>
+echo $name   <br>
+ → -n  : eviter le retour à la ligne  ! 
+</p>
+
+<p>
+other way ! 
+</p>
+
+<p>
+read -p "saisir votre nom ici :" name <br>
+echo $name
+</p>
+
+<h4>change bash</h4>
+
+<br>
+
+<p>
+changer le bash : PS1="hhhhh"    ( take a look at documentation ... ) 
+</p>
+
+<p>
+executer une commande directement  :   /user/ .... /command<br>
+sudo cmd      : executer la commande comme etant un administrateur <br>
+su user1    : se connecter comme un autre utilisateur   <br>
+su - user1  :  + utiliser le repertoir de user1 par defaut ( separated with a space  ! ) <br>
+su                  : se connecter comme root<br>
+exit    : pour fermer cetter session !  
+</p>
+
+<p>
+cmd1  ' aaaaaaa  <br>
+&gt; echo dsd <br>
+&gt; dfsdf                               	|attend la fermetture de commande ... dans le shell secondaire <br>
+&gt; fds fdsf '          
+</p>
+
+<h4>Path local</h4>
+
+<p>
+afficher les path local  :   echo $PATH<br>
+pour remplacer le PATH  :  PATH =" ddsqdqsdq " <br>
+pour concatiner une nouvelle valeur  : PATH = $PATH:/opt/bin
+</p>
+
+<h4>History</h4>
+
+<br>
+
+<p>
+$HISTSIZE     :  size of history file <br>
+ and $HISTFILE   : emplacement de fichier history 
+</p>
+
+<p>
+history    : show history  ! 
+</p>
+
+<p>
+!!    :  up + entre  <br>
+!-n    ; executer  la n'eme comd a partir de la fin <br>
+!string
+</p>
+
+<h4>tty</h4>
+
+<p>
+show the current terminal  : exp   -&gt;  /dev/pts/1
+</p>
+
+
+<hr>
+
+<br>
+
+<h1>Script Shell</h1>
+
+<br>
+
+<h5>creation d'un fichier :</h5>
+
+<br>
+
+<p>
+//-------------------------<br>
+#!/bin/bash    ← indiquer quel shell doit interpreter ce script (obligatoir ) <br>
+#c'est un commentaire  hhhh <br>
+cmd1 <br>
+cmd2<br>
+.<br>
+.<br>
+.<br>
+//--------------------------
+</p>
+
+<h5>Executer fichier  "premier" :</h5>
+
+<br>
+
+<p>
+method 1  : 
+</p>
+
+<p>
+chmod  u+x premier<br>
+ajouter le chemain de fichier au PATH   -&gt; executer directement premier <br>
+.premier    
+</p>
+
+<p>
+methode 2  : <br>
+bash premier   ( if suffit d'avoir le droit de lire )     <br>
+<div style='padding-left: 30pt'>
+⇒   s'execute dans un bash secondaire  ! <br>
+⇒   les variables sont locales
+</div>
+</p>
+
+<p>
+methode 3 : <br>
+source premier   ( executer dans le bach courante )   variable globale   
+</p>
+
+<h4>alias</h4>
+
+<p>
+il y a 3 types de commandes  : interne ( programme shell ) , externe ( programme binaire présentant sur le disk ) et alias de commmandes . <br>
+cree un alias    :    alias l="ls -l"<br>
+afficher les alias  :  alias <br>
+supprimer alias  : unalias l 
+</p>
+
+
+<hr>
+
+<br>
+
+<h4>regrouper les commandes  :</h4>
+
+<br>
+
+<p>
+{<br>
+cmd1 <br>
+cmd2<br>
+cmd3 <br>
+}<br>
+⇔  <br>
+{ cmd1 ; cmd2 ; cmd3 }   s'execute dans le shell courant  
+</p>
+
+<br>
+
+<p>
+( <br>
+cmd1<br>
+cmd2<br>
+cmd2<br>
+) <br>
+⇔  (cmd1 ; cmd2 ; cmd3)     s'execute dans un sous-shell     ... ( cd    , variables  locales ) 
+</p>
+
+<h4>afficher la command  e dans un fichier</h4>
+
+<p>
+0 stdin <br>
+1 stdout<br>
+2 stderr
+</p>
+
+<p>
+( si le fichier n'existe pas  , il sera créé    ... meme si le syntax de commande  est incorrect  , le fichier sera créé )  <br>
+cmmd  &gt;fichier.txt <br>
+cmd    1&gt;fichier.txt <br>
+cmd   2&gt;err.txt     : sortie des erreur    
+</p>
+
+<p>
+cmd  1&gt;fich1 2&gt;/dev/null     :  /dev/null   corbeille 
+</p>
+
+<p>
+&gt; ecrasse <br>
+&gt;&gt; ajout a la fin de fichier  !      
+</p>
+
+<br>
+
+<p>
+exp : <br>
+gcc ex.c  2&gt; erreurs.txt <br>
+ls -l 2 &gt;&gt; list 
+</p>
+
+<p>
+/// redirige stdout vers 1 fichier en mode ajout     :   $set -o noclobber     or(set +o )   pour modifier d'une maniere permenant (.bashrc)  
+</p>
+
+<p>
+cat&lt;f1 &gt;f2    copy de f1 vers f2 <br>
+cat &gt;&gt;f 
+</p>
+
+<p>
+//Fusionner les sorties  :  Il faut utiliser le code suivant : 2&gt;&amp;1 
+</p>
+
+<p>
+exp : cmd  &gt; file.txt  2&gt;&amp;1      : envoie les erreurs au meme endroit que le reste de la meme façon  ( &gt;  ou &gt;&gt; )   :  cmd &gt;&gt;file 2&gt;&amp;1 <br>
+de meme en peut faire   :  cmd 1&gt;&amp;2  2&gt;file.txt <br>
+ou    :    cmd &gt;&amp;   file.txt   
+</p>
+
+<p>
+wc 0&lt;liste     : word count
+</p>
+
+<p>
+//Lit les caractéres de l'entrée standard jusqu'à ce que la commande recontre String <br>
+cat &lt;&lt; String   :  arreter la saisir  a la mot String   
+</p>
+
+<br>
+
+<h4>pipes</h4>
+
+<br>
+
+<p>
+( pour les apps qui lire à partir de stdin     comme wc  , mais pas comme rm car elle ne sais pas lire à partire de stdin )
+</p>
+
+<p>
+=&gt;&gt; apres le pipe , le commande s'appelle filtre ! <br>
+cmd1 | cmd2   :  utiliser les STDOUT de cmd1 comme STDIN pour la command cmd2 
+</p>
+
+<p>
+cmd1 | uniq   : affichier la resultat sans doublons <br>
+cmd1 | sort   -n       :  trier  entiers 
+</p>
+
+<p>
+tail less more
+</p>
+
+<h4>tee and xargs</h4>
+
+<br>
+
+<p>
+<div style='padding-left: 30pt'>
+xargs – reads streams of data from standard input, then generates and executes command lines. ( don't work with internal cmd , such as cd  )    ( work with ls  , ls don't work with STDIN )   
+</div>
+<div style='padding-left: 90pt'>
+→ execute commands in another terminal  !! 
+</div>
+<div style='padding-left: 30pt'>
+tee – reads from standard input and writes simultaneously to standard output and one or many files. It’s more of a redirection command.
+</div>
+=&gt;  le tee fonction comme un tube en T  , exp :    ls | tee file | wc -l      : la commande tee  Lit stdin et  l'envoi sur stdout et sur fichier passé en passé en parametre ! 
+</p>
+
+<p>
+exp   : <br>
+ ls -1 *.sh | xargs             : In this example, the second command converts muti-line output into single line using xargs<br>
+$ ls *.sh | xargs wc -l	    #count number of lines in each file
+</p>
+
+<p>
+exp  : <br>
+This example shows how to send command output to standard output and save to a file
+</p>
+
+<p>
+$ ps -eo cmd,pid,ppid,%mem,%cpu --sort=-%mem | head | tee topprocs.txt             
+</p>
+
+<p>
+to append data in an existing file , pass the -a  flag    : tee -a file.txt 
+</p>
+
+
+<hr>
+
+<br>
+
+<h1>Les commandes de gestion de processus</h1>
+
+<br>
+
+<p>
+<ul>
+<li>Il y a deux types de processus , processus utilisatuer , lancés par l'utilisateur sur un terminal  , Processus démons → processus system , non associe à un terminal . </li>
+<li>Creation de processus  → voir page 1/3 </li>
+<li>Quelques Informations associées aux processus : </li>
+</ul>
+<div style='padding-left: 30pt'>
+- N° process IDentification (PID) <br>
+- N° PID du processus parent (PPID)  → le 1er process crée par le system est : init (out systemd )  , son PID = 1 <br>
+- UID et GID propriétaire d'execution<br>
+- Variables d'environnement ( héritées ) <br>
+- Etat de processus ( S : Sleeping , R : Running ... )  
+</div>
+</p>
+
+<br>
+
+<h2>ps</h2>
+
+<p>
+<ul style='padding-left: 30pt'>
+<li>ps affiche l'etat des processus</li>
+</ul>
+ ps -a  				:  Afficher tous les processus d'une machine associés à un terminal  . <br>
+ps - ax   or ps -e   	: Afficher tous les processus de la machine<br>
+ps -aux      	       	    	: Afficher tous les processus avec le login <br>
+ps -H 				: Representation hiéararchique   ( H not h )  <br>
+ps -l  				: format long ( plus détaillé )<br>
+ps -eo pid,user,...  	: modifier le format de sortie <br>
+ps -u  				: n'affiche que les processus des utilisateurs listés  <br>
+ps -t  				:  ....              ...                 ...                des terminaux listés <br>
+ps -g 				: ....               ....             ...                   des groupes listés 
+</p>
+
+<br>
+
+<p>
+<ul>
+<li>Switch to a virtual Terminal   ,   Ctrl + Alt + Fx    exp : Ctrl + Alt + F3   </li>
+</ul>
+la commande   [  ps -afh  ]   affiche : <br>
+UID          PID           PPID       C    STIME       TTY    TIME   CMD  <br>
+---           ----          ------     —  ------         ----    ----    --------  
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+UID 			: nom de l'utilisateur qui a lancé le processus.<br>
+PID 			: correspond au numéro du processus.<br>
+PPID 			: correspond au numéro du processus parent.<br>
+C				 : au facteur de priorité :  plus la valeur est grande, plus le processus est prioritaire <br>
+STIME			 : correspond à l'heure de lancement du processus <br>
+TTY			 : correspond au nom du terminal <br>
+TIME 			 : correspond à la durée de traitement du processus <br>
+COMMAND 	: correspond au nom du processus. 
+</div>
+</p>
+
+<br>
+
+<h2>pstree</h2>
+
+<p>
+<ul>
+<li>La commande pstree affiche les processus sous forme d'arborescence et permet de les visualiser par leurs liens de parenté.</li>
+</ul>
+</p>
+
+<h2>top</h2>
+
+<p>
+affiche en temps réel la liste des processus et les ressources qu'ils utilisent. elle permet aussi de modifier la priorité des processus ou de les tuer .
+</p>
+
+<p>
+&lt;f&gt; :  choose what to show <br>
+&lt;r&gt; : sort <br>
+&lt;F&gt; : select field of sort 
+</p>
+
+<p>
+//----------&gt; some informations to add here !! 
+</p>
+
+<h2>kill</h2>
+
+<p>
+<div style='padding-left: 30pt'>
+Pour envoyer un signal à un processus on utilise la commande kill  :  kill [&lt;signal&gt;] &lt;PIDs ou %job&gt; 
+</div>
+</p>
+
+<p>
+ID 			Nom 			Description 	<br>
+1 			SIGHUP 		- Arrete le processus et le relance avec le meme PID . <br>
+<div style='padding-left: 210pt'>
+  - terminer un processus attaché à un terminal .
+</div>
+2 			SIGINT 			Interruption du clavier (Ctrl+C dans un terminal) 	<br>
+9 			SIGKILL 		Tue immédiatement le processus  ( au pire des cas ) <br>
+15 			SIGTERM 		Termine le processus  , mais permet d'effectuer des opérations avant l'arret  ( equiv à Menu → Quitter ) <br>
+20			SIGTSTP		Interromps le processus (Ctrl+Z dans un terminal)  , pret à poursuivre l'exécution. ( comme Sleep  ) .  <br>
+18  			SIGCONT  		 Demande de reprise du processus  ( comme Wake-Up ) 
+</p>
+
+<p>
+Ordre : 15 → 2 → 9   
+</p>
+
+<p>
+Using kill → 
+</p>
+
+<p>
+kill -9 2345     ( 2345 est un PID ) <br>
+kill -SIGKILL  2345 2369      ( -SIGKILL ↔ -KILL ) <br>
+kill  4588 9652     ( valuer par defaut de signal   = 15   SIGTERM )  <br>
+kill -HUP   ---&gt; need explanation !! <br>
+( le signal 1 = HUP  peut etre ignoré par une commande si on lance  : nohup &lt;commande&gt;  
+</p>
+
+<p>
+→ kill ne lit pas à partir de la STDIN , on utilise xargs avec le pipep<br>
+→ we may need using ( tr -s " " ) to remove spaces  before using (tr -d " " -f2)  to get PID for example ! 
+</p>
+
+<h4>killall</h4>
+
+<p>
+Envoi un Signal à tous les instances de la commande  :   killall &lt;signal&gt; &lt;commande&gt;  <br>
+exp :  killall -9 xclock     
+</p>
+
+<h2>jobs</h2>
+
+<p>
+Un job est un processus associé à une commande lancée dans le shell <br>
+→ forground 	: le shell doit attendre la fin de la commande <br>
+→ background  	: le shell peut affichier le pompt sans attender la fin de la commande 
+</p>
+
+<p>
+jobs   :  affiche les processus lancés en background dans le shell courant  ou stopped<br>
+jobs est specifier aux shell ou elle éte execute ! 
+</p>
+
+<h4>fg  :</h4>
+
+<p>
+<div style='padding-left: 60pt'>
+fg %num    : reprend l'execution en premier plan 
+</div>
+</p>
+
+<br>
+
+<h4>bg :</h4>
+
+<p>
+<div style='padding-left: 60pt'>
+bg %num   : ramener l'execution de la tache en arriére plan 
+</div>
+</p>
+
+<p>
+→  Ctrl + Z   : stop   -&gt;  bg  : activer le processus en arriere plan <br>
+<div style='padding-left: 30pt'>
+  ps -a   : tout les terminaux  ( il y a un espace avans le premier PID )  
+</div>
+</p>
+
+
+<hr>
+
+<br>
+
+<h1>Modifier les Priorités d'exécution des processus</h1>
+
+<br>
+
+<p>
+TimeSlice  : Temps CPU affecté à un processus ( en ms ) .<br>
+<ul style='padding-left: 30pt'>
+<li>PRI : détermine le nombre de time slices qu'un processeur peut avoir .</li>
+<li>on ne peut pas modifier le PRI directement </li>
+<li>on fixe NI pour indirectement affecter la priorité PRI ( seul le route peut fixer les valeur négative ) </li>
+<li>par defaut NI = 0 </li>
+<li>valeur de NI entre  -20 et 19  , -20 est las plus prioritaire . </li>
+<li>NI  ⇒   Temps Politesse (« Nice ») du CPU</li>
+</ul>
+<div style='padding-left: 60pt'>
+Temps consacré par le CPU aux processus utilisateurs dont la priorité (ou politesse) a changé. 
+</div>
+</p>
+
+<br>
+
+<h2>nice</h2>
+
+<p>
+Modifier la valeur de priorité d'un processus à son lancement <br>
+<div style='padding-left: 30pt'>
+  nice [-N] commande         ⇒ exp :  nice  -10 ./prog  
+</div>
+</p>
+
+<h2>renice</h2>
+
+<p>
+ Modifier le NI d'un processus actif   <br>
+<div style='padding-left: 30pt'>
+renice  priorité  PID   ⇒ exp  : renice 15 17225  
+</div>
+</p>
+
+<h2>top</h2>
+
+<p>
+Modifier le NI d'un processus actif  (  mode interactif  , on appuiant sur "r" )    
+</p>
+
+
+<hr>
+
+<br>
+
+<h2>Using VI</h2>
+
+<br>
+
+<p>
+⇒ (read documentation ... ) 
+</p>
+
+<p>
+:set nu   : affichier la numerotation <br>
+:set nonu   : n'affichier pas la numerotation 
+</p>
+
+<h5>searching  :</h5>
+
+<p>
+rechercher en avant <br>
+/String     next  result    &lt;n&gt;<br>
+rechercher en arriere    <br>
+?String     next  result    &lt;n&gt;
+</p>
+
+<p>
+recherche  , la ligne qui commance par String <br>
+/^String<br>
+recherche  , la ligne qui se termine par String<br>
+/String$ 
+</p>
+
+<h5>replacing</h5>
+
+<p>
+ remplacer toutes les occurences <br>
+s  /String1  /String2    /g        ( g: toutes occurence )    un seul ligne 
+</p>
+
+<p>
+1,2 s  /String1  /String2    dans le premier lignes
+</p>
+
+<p>
+1,$ s  /String1  /String2     de la ligne 1 vers la fin de fichier    ( 1,$  ⇔ % ) 
+</p>
+
+<p>
+10,15  s  /String1  /String2    de la ligne 10 vers 15 
+</p>
+
+
+<hr>
+
+<br>
+
+<h2>Filtres traitement de texte</h2>
+
+<br>
+
+<h4>splite :</h4>
+
+<p>
+-l   nbr de lignes  : <br>
+-b  nbr d'octet     : <br>
+=&gt; fichier a la sortie xa*
+</p>
+
+<h4>grep</h4>
+
+<p>
+grep     "motif "   fichier  :  affichier toutes les lignes qui contiens ce motif  . 
+</p>
+
+<h4>tr</h4>
+
+<p>
+tr ne lir pas à partir de liste de paramettre ! ps 
+</p>
+
+<h4>cat</h4>
+
+<p>
+cat fich | sort fich1  -          (  - :   STDIN ) <br>
+to use pipe u should add xargs  or the cat will only print the path of the file : echo  file.txt | xargs cat 
+</p>
+
+<h4>od :</h4>
+
+<p>
+od file   
+</p>
+
+<p>
+  offset    fichier   <br>
+ ________________<br>
+|		|				|<br>
+|		|				| 
+</p>
+
+<p>
+-A ( options for the first col ) <br>
+-t  ( options for the rest of cols ) 
+</p>
+
+<p>
+od -An  fichier   :  n'affichier pas offset          <br>
+od -ta : affichier caracter speciaux : format special  -&gt;  new line = nl  <br>
+od -tc : affchier caracters speciaux : format special   : exp      new line = nl   <br>
+cmd   | od          -&gt;  on  peut utiliser le pipe
+</p>
+
+<h4>nl</h4>
+
+<p>
+nl  : si aucun fichier est specifier  ,  lire à partir de clavier ! s
+</p>
+
+<h4>uniq</h4>
+
+<p>
+always sort before using uniq  !    cmd | sort | uniq      
+</p>
+
+<h4>cut</h4>
+
+<p>
+cut -c3   file    :     show the col 3  ( every char is an element of a col , we are treating the file as a matrice !  ) 
+</p>
+
+<br>
+
+
+<hr>
+
+<br>
+
+<h1>Searching Files Using UNIX grep ( read documentation plz ..  ! )</h1>
+
+<br>
+
+<p>
+^ (Caret)		=	match expression at the start of a line, as in ^A.<br>
+$ (Question)	=	match expression at the end of a line, as in A$.<br>
+\ (Back Slash)	=	turn off the special meaning of the next character, as in \^.<br>
+<ul>
+<li class="unchecked-box">(Brackets)	=	match any one of the enclosed characters, as in [aeiou]. Use Hyphen "-" for a range, as in [0-9].</li>
+</ul>
+[^ ]			=	match any one character except those enclosed in [ ], as in [^0-9].<br>
+. (Period)		=	match a single character of any value, except end of line.<br>
+<ul>
+<li>(Asterisk)	=	match zero or more of the preceding character or expression.</li>
+</ul>
+\{x,y\}			=	match x to y occurrences of the preceding.<br>
+\{x\}			=	match exactly x occurrences of the preceding.<br>
+\{x,\}			=	match x or more occurrences of the preceding.
+</p>
+
+<h5>=============</h5>
+
+<p>
+grep smug files		=	{search files for lines with 'smug'}<br>
+grep '^smug' files		=	{'smug' at the start of a line}<br>
+grep 'smug$' files	=	{'smug' at the end of a line}<br>
+grep '^smug$' files	=	{lines containing only 'smug'}<br>
+grep '^\^s' files		=	{lines starting with '^s', "\" escapes the ^}<br>
+grep '[Ss]mug' files	=	{search for 'Smug' or 'smug'}<br>
+grep 'B[oO][bB]' files	=	{search for BOB, Bob, BOb or BoB }<br>
+grep '^$' files			=	{search for blank lines}<br>
+grep '[0-9][0-9]' file	=	{search for pairs of numeric digits}
+</p>
+
+<h5>==============</h5>
+
+<p>
+grep '^From: ' /usr/mail/$USER	=	{list your mail}<br>
+grep '[a-zA-Z]'					=	{any line with at least one letter}<br>
+grep '[^a-zA-Z0-9]				=	{anything not a letter or number}<br>
+grep '[0-9]\{3\}-[0-9]\{4\}'		=	{999-9999, like phone numbers}<br>
+grep '^.$'							=	{lines with exactly one character}<br>
+grep '"smug"'						=	{'smug' within double quotes}<br>
+grep '"*smug"*'					=	{'smug', with or without quotes}<br>
+grep '^\.'							=	{any line that starts with a Period "."}<br>
+grep '^\.[a-z][a-z]'				=	{line start with "." and 2 lc letters}
+</p>
+
+<br>
+
+<p>
+Back Slash "\" is used to escape the next symbol, for example, turn off the special meaning that it has. To look for a Caret "^" at the start of a line, the expression is ^\^. Period "." matches any single character. So b.b will match "bob", "bib", "b-b", etc. Asterisk "*" does not mean the same thing in regular expressions as in wildcarding; it is a modifier that applies to the preceding single character, or expression such as [0-9]. An asterisk matches zero or more of what precedes it. Thus [A-Z]* matches any number of upper-case letters, including none, while [A-Z][A-Z]* matches one or more upper-case letters. 
+</p>
+
+<p>
+A word boundary is either the edge of the line or any character except a letter, . <b>For the same logic in grep, invoke it with the -w option ( or use a $ at the end of expression )</b> . And remember that regular expressions are case-sensitive. If you don't care about the case, the expression to match "if" would be [Ii][Ff], where the characters in square brackets define a character set from which the pattern must match one character. Alternatively, you could also invoke grep with the -i option to ignore case. 
+</p>
+
+
+<hr>
+
+<br>
+
+<h1>Wildcards</h1>
+
+<br>
+
+<h5>? (question mark)</h5>
+
+<p>
+<div style='padding-left: 30pt'>
+this can represent any single character. If you specified something at the command line like "hd?" GNU/Linux would look for hda, hdb, hdc and every other letter/number between a-z, 0-9.
+</div>
+</p>
+
+<h5>* (asterisk)</h5>
+
+<p>
+<div style='padding-left: 30pt'>
+this can represent any number of characters (including zero, in other words, zero or more characters). If you specified a "cd*" it would use "cda", "cdrom", "cdrecord" and anything that starts with “cd” also including “cd” itself. "m*l" could by mill, mull, ml, and anything that starts with an m and ends with an l.
+</div>
+</p>
+
+<h5>[ ] (square brackets)</h5>
+
+<p>
+<div style='padding-left: 30pt'>
+specifies a range. If you did m[a,o,u]m it can become: mam, mum, mom if you did: m[a-d]m it can become anything that starts and ends with m and has any character a to d inbetween. For example, these would work: mam, mbm, mcm, mdm. This kind of wildcard specifies an “or” relationship (you only need one to match).
+</div>
+</p>
+
+<h5>{ } (curly brackets)</h5>
+
+<p>
+<div style='padding-left: 30pt'>
+terms are separated by commas and each term must be the name of something or a wildcard. This wildcard will copy anything that matches either wildcard(s), or exact name(s) (an “or” relationship, one or the other).<br>
+For example, this would be valid:  cp {*.doc,*.pdf} ~<br>
+This will copy anything ending with .doc or .pdf to the users home directory. Note that spaces are not allowed after the commas (or anywhere else).
+</div>
+</p>
+
+<h5>[!]</h5>
+
+<p>
+<div style='padding-left: 30pt'>
+This construct is similar to the [ ] construct, except rather than matching any characters inside the brackets, it'll match any character, as long as it is not listed between the [ and ]. This is a logical NOT. For example rm myfile[!9] will remove all myfiles* (ie. myfiles1, myfiles2 etc) but won't remove a file with the number 9 anywhere within it's name.
+</div>
+</p>
+
+<h5>\ (backslash)</h5>
+
+<p>
+<div style='padding-left: 30pt'>
+is used as an "escape" character, i.e. to protect a subsequent special character. Thus, "\\” searches for a backslash. Note you may need to use quotation marks and backslash(es).
+</div>
+</p>
+
+
+<hr>
+
+<br>
+
+<h3>awk</h3>
+
+<p>
+Permet de traiter les lignes d'un fichier en entrée .<br>
+$n  :  field number n <br>
+$0 : the entire line   <br>
+NR : numero de ligne courant<br>
+NF : Nb de champs dans ligne courant<br>
+FS : séparateur de champs 
+</p>
+
+<p>
+awk -F &lt;separateur&gt; '/pattern(like using grep)/{cmd1 ; cmd2 }  file 
+</p>
+
+<p>
+exp : date | awk '{ print "date of today is ",$0}'  <br>
+exp : awk -F: '/user/ {print $1,$2}' /etc/passwd  
+</p>
+
+<br>
+
+<h3>sed → take a look at documentations</h3>
+
+<br>
+
+<p>
+Cette commande permet d'appliquer un certain nombre de commandes sur un fichier puis d'en afficher le resultat (sans modification du fichier de départ) sur la sortie standard.
+</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+	</div>
+
+	<br />
+
+	<div class='page-footer'>
+
+	</div>
+
+	<hr />
+
+	<div class='heading'>
+	<h1>upper <a name='upper'></a></h1>
+	</div>
+
+	<div class='content'>
+	
+	</div>
+
+	<br />
+
+	<div class='page-footer'>
+		<b>Backlinks:</b>
+
+		<a href='#Correction TP ( file globbing )'>Correction TP ( file globbing )</a>
+
+		<br /><br />
+
+	</div>
+
+	
+
+</div>
+
+</body>
+</html>
